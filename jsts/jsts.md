@@ -72,9 +72,9 @@
 
 
 
-- jsts 참고
-  - https://bjornharrtell.github.io/jsts
-  - https://openlayers.org/en/latest/examples/jsts.html
+### jsts 참고
+- https://bjornharrtell.github.io/jsts
+- https://openlayers.org/en/latest/examples/jsts.html
 
 
 
