@@ -62,12 +62,30 @@
   var sampleGeo1 = parser.read(feature1.getGeometry());
   var sampleGeo2 = parser.read(feature2.getGeometry());
 
-  var unionGeo = jsts.operation.overlay.OverlayOp.union(sampleGeo1, sampleGeo2);
+  // var unionGeo = jsts.operation.overlay.OverlayOp.union(sampleGeo1, sampleGeo2);
+  var unionGeo = sampleGeo1.union(sampleGeo2);
   
   parser.write(unionGeo);
 
   ...
 
+```
+
+### intersection
+- 중첩
+- 교집합 return
+
+```javascript
+  var sampleGeo1 = parser.read(feature1.getGeometry());
+  var sampleGeo2 = parser.read(feature2.getGeometry());
+  
+  var interGeo = sampleGeo1.intersection(sampleGeo2);
+
+  var feature = new ol.Feature({
+    geometry : parser.write(interGeo)
+  });
+
+  ...
 ```
 
 
